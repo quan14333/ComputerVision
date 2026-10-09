@@ -1,1 +1,0 @@
-# Record the runtime environment and dependency versions.
