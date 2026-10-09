@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+
+# Model weights
+*.pth
+*.pt
+*.ckpt
+
+# Large experiment artifacts
+results/*/checkpoint/*
+results/*/pseudo_labels/*
+!results/_template/checkpoint/.gitkeep
+!results/_template/pseudo_labels/.gitkeep
+
+# Local datasets
+/data/
+/datasets/
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+
+# Experiment trackers
+wandb/
+runs/
