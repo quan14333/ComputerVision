@@ -1,0 +1,182 @@
+Experiment: E000_env
+
+Owner: TV1
+
+Seed: 0
+
+Kaggle kernel Python: 3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]
+
+Group commit: 52bd3d59e8da77dd2f459a383f3b362064f2c68c
+
+ExCEL commit: 2cd7f510d62793c76365268a2cc4da7cbe915e4d
+
+=== GPU / driver ===
+Fri Oct  9 16:31:42 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.178.04             Driver Version: 580.178.04     CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  Tesla T4                       Off |   00000000:00:04.0 Off |                    0 |
+| N/A   40C    P8             10W /   70W |       0MiB /  15360MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  Tesla T4                       Off |   00000000:00:05.0 Off |                    0 |
+| N/A   39C    P8              9W /   70W |       0MiB /  15360MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+
+=== ExCEL Python ===
+Python 3.7.12
+
+=== Installed packages ===
+absl-py==2.1.0
+addict==2.4.0
+cachetools==5.5.2
+certifi==2026.7.22
+charset-normalizer==3.5.2
+cycler==0.11.0
+einops==0.6.0
+filelock==3.12.2
+fonttools==4.38.0
+fsspec==2023.1.0
+ftfy==6.1.1
+google-auth==2.45.0
+google-auth-oauthlib==0.4.6
+grpcio==1.62.3
+huggingface-hub==0.16.4
+idna==3.10
+imageio==2.26.0
+importlib-metadata==6.7.0
+joblib==1.3.2
+kiwisolver==1.4.5
+Markdown==3.4.4
+MarkupSafe==2.1.5
+matplotlib==3.5.3
+mmcv==1.7.1
+networkx==2.6.3
+numpy @ file:///home/conda/feedstock_root/build_artifacts/numpy_1649585244026/work
+oauthlib==3.2.2
+opencv-python==5.0.0.93
+opencv-python-headless==4.8.1.78
+packaging==24.0
+Pillow==9.5.0
+platformdirs==4.0.0
+protobuf==3.20.3
+pyasn1==0.5.1
+pyasn1-modules==0.3.0
+pydensecrf @ file:///home/conda/feedstock_root/build_artifacts/pydensecrf_1657376428289/work
+pyparsing==3.1.4
+python-dateutil==2.9.0.post0
+PyWavelets==1.3.0
+PyYAML==6.0.1
+regex==2022.10.31
+requests==2.31.0
+requests-oauthlib==2.0.0
+rsa==4.9.1
+scikit-image==0.19.3
+scikit-learn==1.0.2
+scipy==1.7.3
+six==1.17.0
+tensorboard==2.11.2
+tensorboard-data-server==0.6.1
+tensorboard-plugin-wit==1.8.1
+texttable==1.6.7
+threadpoolctl==3.1.0
+tifffile==2021.11.2
+timm==0.6.12
+tomli==2.0.1
+torch==1.12.1+cu113
+torchvision==0.13.1+cu113
+tqdm==4.65.0
+typing_extensions==4.7.1
+urllib3==2.0.7
+wcwidth==0.2.14
+Werkzeug==2.2.3
+yapf==0.43.0
+zipp==3.15.0
+
+=== Smoke test ===
+/kaggle/working/excel-env/lib/python3.7/site-packages/mmcv/__init__.py:21: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  'On January 1, 2023, MMCV will release v2.0.0, in which it will remove '
+Python: 3.7.12 | packaged by conda-forge | (default, Oct 26 2021, 06:08:21) 
+[GCC 9.4.0]
+Python executable: /kaggle/working/excel-env/bin/python
+Torch: 1.12.1+cu113
+Torchvision: 0.13.1+cu113
+NumPy: 1.21.5
+MMCV: 1.7.1
+CLIP source: /kaggle/working/ComputerVision/third_party/ExCEL/clip/__init__.py
+CUDA runtime: 11.3
+cuDNN: 8302
+CUDA available: True
+GPU count: 2
+GPU: Tesla T4
+IMPORT_PASS
+
+  0%|                                               | 0.00/335M [00:00<?, ?iB/s]
+  2%|▉                                     | 8.28M/335M [00:00<00:03, 86.8MiB/s]
+  5%|█▉                                    | 16.6M/335M [00:00<00:04, 78.7MiB/s]
+  7%|██▋                                   | 24.1M/335M [00:00<00:06, 46.8MiB/s]
+ 10%|███▋                                  | 32.0M/335M [00:00<00:05, 55.9MiB/s]
+ 12%|████▎                                 | 38.5M/335M [00:00<00:05, 59.2MiB/s]
+ 14%|█████▏                                | 46.2M/335M [00:00<00:04, 64.5MiB/s]
+ 16%|██████                                | 53.8M/335M [00:00<00:04, 68.4MiB/s]
+ 18%|██████▉                               | 60.7M/335M [00:01<00:04, 60.0MiB/s]
+ 20%|███████▌                              | 66.9M/335M [00:01<00:05, 50.0MiB/s]
+ 22%|████████▏                             | 72.1M/335M [00:01<00:07, 38.4MiB/s]
+ 23%|████████▋                             | 76.4M/335M [00:01<00:09, 29.9MiB/s]
+ 25%|█████████▍                            | 83.1M/335M [00:01<00:07, 36.9MiB/s]
+ 26%|██████████                            | 88.6M/335M [00:01<00:06, 41.2MiB/s]
+ 29%|██████████▉                           | 96.0M/335M [00:02<00:05, 48.9MiB/s]
+ 30%|███████████▊                           | 102M/335M [00:02<00:04, 51.1MiB/s]
+ 32%|████████████▌                          | 108M/335M [00:02<00:04, 54.5MiB/s]
+ 34%|█████████████▏                         | 113M/335M [00:02<00:04, 55.7MiB/s]
+ 36%|██████████████                         | 121M/335M [00:02<00:03, 61.2MiB/s]
+ 38%|██████████████▊                        | 128M/335M [00:02<00:03, 64.6MiB/s]
+ 40%|███████████████▌                       | 134M/335M [00:02<00:03, 65.2MiB/s]
+ 43%|████████████████▊                      | 144M/335M [00:02<00:03, 64.6MiB/s]
+ 45%|█████████████████▌                     | 150M/335M [00:02<00:03, 62.4MiB/s]
+ 47%|██████████████████▍                    | 158M/335M [00:03<00:02, 66.8MiB/s]
+ 50%|███████████████████▎                   | 166M/335M [00:03<00:02, 71.2MiB/s]
+ 52%|████████████████████▍                  | 175M/335M [00:03<00:02, 78.9MiB/s]
+ 55%|█████████████████████▎                 | 183M/335M [00:03<00:02, 77.2MiB/s]
+ 57%|██████████████████████▏                | 190M/335M [00:03<00:02, 74.6MiB/s]
+ 59%|███████████████████████                | 198M/335M [00:03<00:01, 76.4MiB/s]
+ 61%|███████████████████████▉               | 205M/335M [00:03<00:01, 76.2MiB/s]
+ 64%|████████████████████████▊              | 213M/335M [00:03<00:01, 75.7MiB/s]
+ 66%|█████████████████████████▊             | 221M/335M [00:03<00:01, 78.2MiB/s]
+ 68%|██████████████████████████▋            | 228M/335M [00:03<00:01, 74.8MiB/s]
+ 70%|███████████████████████████▍           | 236M/335M [00:04<00:02, 34.7MiB/s]
+ 72%|████████████████████████████▏          | 242M/335M [00:04<00:02, 39.3MiB/s]
+ 74%|████████████████████████████▉          | 248M/335M [00:06<00:08, 11.1MiB/s]
+ 75%|█████████████████████████████▍         | 252M/335M [00:08<00:15, 5.47MiB/s]
+ 77%|██████████████████████████████         | 258M/335M [00:08<00:10, 7.53MiB/s]
+ 79%|██████████████████████████████▉        | 265M/335M [00:08<00:06, 10.9MiB/s]
+ 82%|███████████████████████████████▉       | 274M/335M [00:08<00:04, 15.8MiB/s]
+ 84%|████████████████████████████████▉      | 282M/335M [00:09<00:02, 22.2MiB/s]
+ 86%|█████████████████████████████████▋     | 289M/335M [00:09<00:01, 26.1MiB/s]
+ 89%|██████████████████████████████████▌    | 297M/335M [00:09<00:01, 33.4MiB/s]
+ 91%|███████████████████████████████████▌   | 305M/335M [00:09<00:00, 40.5MiB/s]
+ 94%|████████████████████████████████████▌  | 313M/335M [00:09<00:00, 49.5MiB/s]
+ 96%|█████████████████████████████████████▌ | 322M/335M [00:09<00:00, 58.0MiB/s]
+ 99%|██████████████████████████████████████▍| 330M/335M [00:09<00:00, 57.9MiB/s]
+100%|███████████████████████████████████████| 335M/335M [00:09<00:00, 35.9MiB/s]
+output_0 shape= (1, 21, 20, 20) dtype= torch.float32
+output_1 shape= (1, 256, 20, 20) dtype= torch.float32
+output_2 shape= (1, 400, 20) dtype= torch.float32
+output_3 shape= (12, 1, 401, 401) dtype= torch.float32
+output_4 shape= (1, 400, 400) dtype= torch.float32
+Forward seconds: 1.0773843469999065
+Peak allocated MiB: 695.2509765625
+SMOKE_FORWARD_PASS
